@@ -24,4 +24,16 @@ public class EmployeeServiceimpl implements EmployeeService {
     public Employee createEmployee(Employee employee) {
         return null;
     }
+
+    @Override
+    public Employee updateEmployee(Long id, Employee employee) {
+        return null;
+    }
+
+    @Override
+    public void deleteEmployee(Long id) {
+
+    }
+
+
 }
