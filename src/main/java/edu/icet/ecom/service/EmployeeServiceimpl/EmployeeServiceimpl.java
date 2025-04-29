@@ -35,5 +35,15 @@ public class EmployeeServiceimpl implements EmployeeService {
 
     }
 
+    @Override
+    public Employee getEmployeeById(Long id) {
+        return null;
+    }
+
+    @Override
+    public List<Employee> getEmployeesByDepartment(String department) {
+        return List.of();
+    }
+
 
 }

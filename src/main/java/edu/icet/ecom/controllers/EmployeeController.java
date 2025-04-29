@@ -38,4 +38,16 @@ public class EmployeeController {
 
 
 
+    @GetMapping("/{id}")
+    public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
+        return ResponseEntity.ok(service.getEmployeeById(id));
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<List<Employee>> getByDepartment(@RequestParam String department) {
+        return ResponseEntity.ok(service.getEmployeesByDepartment(department));
+    }
+
+
+
 }
