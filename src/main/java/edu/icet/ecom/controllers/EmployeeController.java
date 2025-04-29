@@ -20,5 +20,10 @@ public class EmployeeController {
         return ResponseEntity.ok(service.getAllEmployees());
     }
 
+    @PostMapping
+    public ResponseEntity<Employee> createEmployee(@RequestBody Employee employee) {
+        return ResponseEntity.ok(service.createEmployee(employee));
+    }
+
 
 }
