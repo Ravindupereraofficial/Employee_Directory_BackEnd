@@ -5,13 +5,13 @@ import edu.icet.ecom.dto.Employee;
 import java.util.List;
 
 public interface EmployeeService {
-    List<Employee> getAllEmployees();
-    Employee createEmployee(Employee employee);
-    Employee updateEmployee(Long id, Employee employee);
-    void deleteEmployee(Long id);
-    Employee getEmployeeById(Long id);
-    List<Employee> getEmployeesByDepartment(String department);
+    Employee save(Employee employee);
 
+    Employee findById(Long id);
 
+    void deleteById(Long id);
+
+    Employee update(Long id,Employee employee);
+
+    List<Employee> findall();
 }
-
